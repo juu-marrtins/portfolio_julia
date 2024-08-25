@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Boilover';
+    src: url('path/to/boilover.eot'); /* IE9 Compat Modes */
+    src: url('path/to/boilover.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('path/to/boilover.woff2') format('woff2'), /* Super Modern Browsers */
+         url('path/to/boilover.woff') format('woff'), /* Pretty Modern Browsers */
+         url('path/to/boilover.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('path/to/boilover.svg#boilover') format('svg'); /* Legacy iOS */
+}
+body{
+    background-color: rgb(228, 228, 224);
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(35, 4, 66);
+
+}
+#header{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px;
+    height: 30px;
+    font-size: 20px;
+}
+.titulo_nav{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    cursor: pointer;
+}
+#nome{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+#menu{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    background-color: calc();
+    padding: auto;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+a{
+    color: inherit; 
+    text-decoration: none;
+}
+#linha01{
+    border: 1px solid rgb(35, 4, 66); 
+    border-top: 1px; 
+    margin: 5px; 
+    box-shadow: 1px 1px rgba(35, 4, 66, 0.2);
+}
+#apresentacao{
+    margin-top: 20px;
+    align-items: left;
+    display: flex;
+    margin-left: 150px;
+    margin-top: 200px;
+    font-size: 50px;
+    font-family: "Boilover", sans-serif;
+}
