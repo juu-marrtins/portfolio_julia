@@ -1,63 +1,107 @@
 @font-face {
-    font-family: 'Boilover';
-    src: url('path/to/boilover.eot'); /* IE9 Compat Modes */
-    src: url('path/to/boilover.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('path/to/boilover.woff2') format('woff2'), /* Super Modern Browsers */
-         url('path/to/boilover.woff') format('woff'), /* Pretty Modern Browsers */
-         url('path/to/boilover.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('path/to/boilover.svg#boilover') format('svg'); /* Legacy iOS */
+    font-family: 'PP Neue Montreal Medium';
+    src: url('fonts/PPNeueMontrealMono-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal Thin';
+    src: url('fonts/PPNeueMontrealMono-Thin.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
 }
 body{
     background-color: rgb(228, 228, 224);
-    justify-content: center;
     flex-direction: column;
     color: rgb(35, 4, 66);
+    display: flex;
+    size-adjust: auto;
+    font-family: "PP Neue Montreal", sans-serif;
+    margin:0;
 
+}
+#primeiro_quadro{
+    padding: 20px;
+    margin-bottom: 150px;
+    display: flex;
 }
 #header{
     display: flex; 
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    padding: 10px;
-    height: 30px;
+    padding: 10px 10px;
+    height: auto;
     font-size: 20px;
-}
-.titulo_nav{
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    cursor: pointer;
-}
-#nome{
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 40px;
+    background-color:rgb(228, 228, 224);
 }
 #menu{
-    width: 400px;
+    gap: 100px;
     display: flex;
     flex-direction: row;
-    background-color: calc();
     padding: auto;
     justify-content: space-between;
     margin-right: 20px;
+    flex-wrap: wrap;
 }
-a{
-    color: inherit; 
+.titulo_nav{
+    font-family: "PP Neue Montreal", sans-serif;
+    color:  rgb(35, 4, 66);
     text-decoration: none;
+    font-size: 20px;
 }
-#linha01{
+#meu_nome{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+    color: rgb(35, 4, 66);
+}
+h1{
+    font-family: "Oswald", sans-serif;
+    font-size:28px;
+    font-weight: normal;
+}
+#primeiro_quadro strong{
+    font-size: 50px;
+}
+#linha_01{
     border: 1px solid rgb(35, 4, 66); 
     border-top: 1px; 
     margin: 5px; 
     box-shadow: 1px 1px rgba(35, 4, 66, 0.2);
 }
 #apresentacao{
-    margin-top: 20px;
-    align-items: left;
+    align-items: center;
     display: flex;
-    margin-left: 150px;
-    margin-top: 200px;
+    flex-direction:row;
+    margin-left: 120px;
+    margin-top: 130px;
     font-size: 50px;
-    font-family: "Boilover", sans-serif;
+}
+#imagem_apresentacao{
+    max-width: 100%;
+    height: auto;
+    margin-left: 230px;
+    margin-right: 100px;
+}
+#apresentacao_programcao{
+    font-size: 10px;
+}
+#segundo_quadro{
+    background-color: rgb(35, 4, 66);
+}
+#segundo_quadro h2{
+    font-size: 40px;
+    color:rgb(228, 228, 224);
+    text-align: right;
+    margin-right: 200px;
+}
+#sobre_mim{
+    color:rgb(228, 228, 224);
+    text-align: left;
+    margin-top: 130px;
+    margin-left: 120px;
+    font-size: 25px;
+    font-weight: normal;
 }
