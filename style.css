@@ -86,8 +86,9 @@ body{
     font-size: 80px;
 }
 h1{
-    font-weight: normal;
-    font-size: 30px;
+    font-weight: bold;
+    font-size: 70px;
+    font-family: "Aileron Bold", sans-serif;
 }
 #web_developer{
     font-size: 30px;
@@ -112,8 +113,7 @@ a:hover{
 #div_02{
     background-color: black;
     color: white;
-    display: grid;
-    grid-template-columns: 200px 1fr 1fr;
+    display: flex;
 }
 #titulo_pag02{
     align-items: center;
@@ -141,4 +141,12 @@ a:hover{
 
 #icones_programacao{
     background-color: white;
+}
+@media (max-width:400px){
+    #div_01{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    }
 }
