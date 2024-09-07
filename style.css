@@ -36,117 +36,202 @@
     font-style: normal;
 }
 body{
-    background-color: rgb(255, 255, 255);
-    flex-direction: column;
-    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden ;
+    font-family: 'Aileron Bold', sans-serif;
     display: flex;
-    size-adjust: auto;
-    margin:0;
-    font-family: "Aileron Regular", sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
 }
-#header{
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-between;
+header{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
     align-items: center;
-    padding: 10px;
-    font-size: 20px;
-    background-color:rgb(255, 255, 255);
+    padding: 20px;
+}
+#header div{
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 #menu{
-    gap: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap:90px;  
+}
+#header p{
+    color: black;
+    font-size: 20px;
+}
+.titulo_nav{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.titulo_nav:hover{
+    color:blueviolet;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+#PrimeiraPagina{
+    background-color: rgb(255, 255, 255);
+    color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-right: 20px;
+    align-items: center; 
+    padding-left: 60px;
 }
-#meu_nome{
-    color: black;
-    font-family: "Aileron Bold", sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    margin-left: 30px;
+.Julia{
+    color: rgb(0, 0, 0);
 }
-.titulo_nav{
-    font-family: "Aileron Bold", sans-serif;
-    color:  rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 15px;
-}
-#pag_01{
+#Apresentacao{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items:flex-start;
+    background-color: rgb(255, 255, 255);
+    font-family: "Aileron Regular", sans-serif;
 }
-#div_01{
-    margin-left: 120px;
-    font-size: 50px;
-}
-#div_01 strong{
+h1 p{
     font-size: 80px;
-}
-h1{
-    font-weight: bold;
-    font-size: 70px;
+    margin:0;
+    margin-top: 10px;
+    align-items: flex-start;
     font-family: "Aileron Bold", sans-serif;
 }
-#web_developer{
-    font-size: 30px;
-}
-#imagem_01{
-    max-width: 100%;
-    height: auto ;
-    margin-top: 30px;
-    margin-left: 450px;
+#Developer{
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 30px;
 }
 #contato{
-    justify-content: space-around;
     display: flex;
-    margin-top: 20px;
+    flex-direction: row;
 }
 .icones{
-    color:black;
+    margin-right: 100px;
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+    transition: all 0.3s ease;
 }
-a:hover{
-    color:rgb(98, 17, 151);
+svg{
+    display: block; 
+    transition: all 0.3s ease;
 }
-#div_02{
-    background-color: black;
+#GitHub:hover{
+    color:  blueviolet;
+    box-shadow: 0 0 10px blueviolet;
+    border-radius: 50%;
+}   
+#Linkedin:hover{
+    color:  blueviolet;
+    box-shadow: 0 0 10px blueviolet;
+    border-radius: 20%;
+}
+#Instagram:hover{
+    color: blueviolet;
+    box-shadow: 0 0 10px blueviolet;
+    border-radius: 30%;
+}
+#QuadradoPreto{
+    background-color: rgb(255, 255, 255);
     color: white;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-#titulo_pag02{
+#Sobre{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    font-size: 47px;
-    text-align: left;
-    margin-left: 40px;
+    justify-content: center;
+    width:  800px;
+    height: 300px;
+    margin: 0;
+    padding: 40px;
+    float: right;
+    box-shadow: 0 0 30px rgb(107, 93, 120);
+    border-radius: 10px; 
+    margin-right: 90px; 
 }
-#minha_historia{
-    margin-top: 60px;
+#Sobre h2{
+    font-size: 50px;
+    margin: 0;
+}
+#Sobre p{
     font-size: 20px;
-    line-height: 2.0;
 }
-#minha_historia span{
-    font-style: bold;
+#Sobre p span{
+    background-color: rgb(0, 0, 0);
+    color:blueviolet;
+    border-radius: 2px;
+}
+.IconesSkills{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+.TextoProgramacao{
+    font-family: "Aileron Bold", sans-serif;
+    background-color: blueviolet;
+    font-size: 70px;
+    color: #000000;
+    perspective: 5000px; 
+    position: relative;
+    display: inline-block;
+    transform: rotateX(20deg) rotateY(-35deg) translateZ(40px);
+    margin: 0;
+    padding-bottom: 10px;
+    display: flex;
+}
+#IconesProgramacao{
+    padding-top: 150px;
+    padding-right: 200px;
+    display: flex;
+    margin: 0%;
+}
+.ProjetosGrid{
+    display: flex;
+    gap:50px;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+}
+.TituloProjetos{
+    font-size: 70px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 300px;
+}
+.Projetos{
     background-color: white;
-    color: black;
-    border: 3px;
-    border-style: double;
+    box-shadow: 0 0 30px rgb(67, 31, 100);
+    border: 2px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    padding: 20px;
+    width: 340px;
+    height: 500px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
-#imagem_02{
-    max-width: 100%;
-    height: auto ;
-    margin-left: 130px;
+.Projetos:hover{
+    background-color: rgb(209, 187, 229);
+    width: 360px;
+    height: 520px;
+    transition: all 0.3s ease;
 }
 
-#icones_programacao{
-    background-color: white;
-}
-@media (max-width:400px){
-    #div_01{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 200px;
-    }
-}
