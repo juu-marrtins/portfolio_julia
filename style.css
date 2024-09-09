@@ -191,7 +191,6 @@ svg{
     background-color: blueviolet;
     font-size: 70px;
     color: #000000;
-    perspective: 5000px; 
     position: relative;
     display: inline-block;
     transform: rotateX(20deg) rotateY(-35deg) translateZ(40px);
@@ -303,4 +302,59 @@ hr{
 }
 
 /* RESPONSIVIDADE */
-
+@media (max-width: 400px){
+    img{
+        width: 0%;
+    }
+    #menu{
+        gap:15px;
+    }
+    #QuadradoPreto{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    #Sobre{
+        width:  276px;
+        height: 440px;
+        margin-top: 40px;
+        padding: 40px;
+    }
+    section{
+        padding: 0px;
+    }
+    h1 p{
+        padding: 5px;
+        margin-left: -25px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    #Developer{
+        font-size: 25px;
+    }
+    #Contato svg{
+        padding: 15px;
+        display: flex;
+    }
+    .TituloProjetos{
+        font-size: 60px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 43px;
+        background-color: #000000;
+        color: white;
+        flex-direction: row;
+    }
+    .ProjetosGrid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section #TerceiraPagina{
+        padding: 1px;
+    }
+    footer{
+        text-align: center;
+    }
+}
