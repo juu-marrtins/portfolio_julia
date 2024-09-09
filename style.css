@@ -1,0 +1,360 @@
+@font-face {
+    font-family: 'PP Neue Montreal Medium';
+    src: url('fonts/PPNeueMontrealMono-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'PP Neue Montreal Thin';
+    src: url('fonts/PPNeueMontrealMono-Thin.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'PP Neue Montreal Bold';
+    src: url('fonts/PPNeueMontrealMono-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aileron ThinItalic';
+    src: url('fonts/Aileron-ThinItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aileron Regular';
+    src: url('fonts/Aileron-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aileron Bold';
+    src: url('fonts/Aileron-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+:root{
+    --cor-primaria:blueviolet;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden ;
+    font-family: 'Aileron Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+header{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+#header div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#menu{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap:90px;  
+}
+#header p{
+    color: black;
+    font-size: 20px;
+}
+.titulo_nav{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.titulo_nav:hover{
+    color: var(--cor-primaria)
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin-bottom: 70px;
+}
+.rotacao{
+    transform: rotateX(20deg) rotateY(-25deg) translateZ(40px); 
+}
+#PrimeiraPagina{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    padding-left: 60px;
+}
+#Apresentacao{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    background-color: rgb(255, 255, 255);
+    font-family: "Aileron Regular", sans-serif;
+    font-size: 30px;
+}
+#Apresentacao p{
+    background-color: blueviolet;
+}
+h1 p{
+    font-size: 90px;
+    margin:0;
+    margin-top: 10px;
+    align-items: flex-start;
+    font-family: "Aileron Bold", sans-serif;
+}
+#Developer{
+    font-size: 45px;
+    margin: 0;
+    margin-bottom: 30px;
+}
+#contato{
+    display: flex;
+    flex-direction: row;
+}
+.icones{
+    margin-right: 100px;
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+    transition: all 0.3s ease;
+}
+svg{
+    display: block; 
+    transition: all 0.3s ease;
+}
+#GitHub:hover{
+    color:  blueviolet;
+    box-shadow: 0 0 10px blueviolet;
+    border-radius: 50%;
+}   
+#Linkedin:hover{
+    color:  blueviolet;
+    box-shadow: 0 0 10px blueviolet;
+    border-radius: 20%;
+}
+#Instagram:hover{
+    color: blueviolet;
+    box-shadow: 0 0 10px blueviolet;
+    border-radius: 30%;
+}
+#QuadradoPreto{
+    background-color: rgb(255, 255, 255);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#Sobre{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:  800px;
+    height: 300px;
+    margin: 0;
+    padding: 40px;
+    float: right;
+    box-shadow: 0 0 30px rgb(107, 93, 120);
+    border-radius: 10px; 
+    margin-right: 90px; 
+}
+#Sobre h2{
+    font-size: 50px;
+    margin: 0;
+}
+#Sobre p{
+    font-size: 20px;
+}
+#Sobre p span{
+    background-color: rgb(0, 0, 0);
+    color:blueviolet;
+    border-radius: 2px;
+}
+
+.TextoProgramacao{
+    font-family: "Aileron Bold", sans-serif;
+    background-color: blueviolet;
+    font-size: 70px;
+    color: #000000;
+    position: relative;
+    display: inline-block;
+    transform: rotateX(20deg) rotateY(-35deg) translateZ(40px);
+    margin: 0;
+    padding-bottom: 10px;
+    display: flex;
+}
+#IconesProgramacao{
+    padding-top: 150px;
+    padding-right: 200px;
+    display: flex;
+    margin: 0%;
+}
+.ProjetosGrid{
+    display: flex;
+    gap:50px;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+#TerceiraPagina{
+    padding-top: 70px;
+}
+.TituloProjetos{
+    font-size: 70px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 300px;
+    background-color: #000000;
+    color: white;
+    flex-direction: row;
+}
+hr{
+    border: 1px solid rgb(35, 4, 66); 
+    box-shadow: 1px 1px blueviolet;
+}
+.Projetos{
+    background-color: white;
+    box-shadow: 0 0 30px rgb(67, 31, 100);
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    width: 340px;
+    height: 500px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.Projetos:hover{
+    background-color: rgb(209, 187, 229);
+    width: 360px;
+    height: 520px;
+    transition: all 0.3s ease;
+}
+.link{
+    font-style: normal;
+    text-decoration: none;
+}
+.Roxo{
+    color: blueviolet;
+}
+.ContactMe nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 70px
+}
+.ContatoIcones{
+    color: rgb(255, 255, 255);
+    text-decoration: normal;
+    cursor: pointer;
+    transition: all 0.3s ease;  
+}
+#Whats:hover{
+    color:  blueviolet;
+    box-shadow: 0 0 10px blueviolet;
+    border-radius: 50%;
+}
+#Email:hover{
+    color:  blueviolet;
+    box-shadow: 3 0 10px blueviolet;    
+    border-radius: 1%;
+}
+iframe{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+footer nav{
+    padding-top: 20px;
+}
+hr{
+    border: 1px solid blueviolet; 
+    border-top: 1px; 
+    margin: 5px; 
+    box-shadow: 1px 1px blueviolet;
+    width: 100%;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 400px){
+    img{
+        width: 0%;
+    }
+    #menu{
+        gap:15px;
+    }
+    #QuadradoPreto{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    #Sobre{
+        width:  276px;
+        height: 440px;
+        margin-top: 40px;
+        padding: 40px;
+    }
+    section{
+        padding: 0px;
+    }
+    h1 p{
+        padding: 5px;
+        margin-left: -25px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    #Developer{
+        font-size: 25px;
+    }
+    #Contato svg{
+        padding: 15px;
+        display: flex;
+    }
+    .TituloProjetos{
+        font-size: 60px;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 43px;
+        background-color: #000000;
+        color: white;
+        flex-direction: row;
+    }
+    .ProjetosGrid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section #TerceiraPagina{
+        padding: 1px;
+    }
+    footer{
+        text-align: center;
+    }
+}
